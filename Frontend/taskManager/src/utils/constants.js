@@ -1,1 +1,1 @@
-export const BASE_URL="http://localhost:8000";
+export const BASE_URL="https://backend-notes-0k6m.onrender.com/";
