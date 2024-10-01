@@ -23,6 +23,8 @@ app.use(
     })
 );
 
+const port=process.env.PORT || 8000;
+
 app.get("/",(req,res)=>{
     res.json({data:"hello"});
 
@@ -346,5 +348,5 @@ app.get("/search-notes/",authenticateToken,async(req,res)=>{
 
 })
  
-app.listen(8000);
+app.listen(port);
 module.exports=app;
