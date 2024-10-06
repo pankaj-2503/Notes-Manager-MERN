@@ -1,1 +1,1 @@
-export const BASE_URL="https://backend-notes-0k6m.onrender.com/";
+export const BASE_URL="https://notes-manager-v1.onrender.com/";
