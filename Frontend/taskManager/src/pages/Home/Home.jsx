@@ -12,6 +12,11 @@ import EmptyCard from "../../components/EmptyCard/EmptyCard";
 import AddNoteImg from "../../assets/Empty-notes.jpg";
 import NoDataImg from "../../assets/No_data.png";
 
+import Bot from "../Home/Bot";
+
+// const OPENROUTER_API_KEY="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";
+
+
 const Home = () => {
   const [openAddEditModal, setOpenAddEditModal] = useState({
     isShown: false,
@@ -145,6 +150,9 @@ const Home = () => {
     }
   };
 
+  // Chatbot
+  
+
   return (
     <>
       <Navbar
@@ -186,7 +194,7 @@ const Home = () => {
       </div>
 
       <button
-        className="w-16 h-16 flex items-center justify-center rounded-2xl bg-primary hover:bg-blue-600 absolute right-10 bottom-10"
+        className="w-16 h-16 flex items-center justify-center rounded-2xl bg-primary hover:bg-blue-600 absolute right-8 bottom-[120px]"
         onClick={() =>
           setOpenAddEditModal({ isShown: true, type: "add", data: null })
         }
@@ -223,6 +231,9 @@ const Home = () => {
         type={showToastMsg.type}
         onClose={handleCloseToast}
       />
+      <Bot/>
+      
+      
     </>
   );
 };
