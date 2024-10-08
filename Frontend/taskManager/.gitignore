@@ -10,7 +10,7 @@ lerna-debug.log*
 node_modules
 dist-ssr
 *.local
-./src/utils/constants.js
+Frontend/taskManager/src/utils/constants.js
 
 # Editor directories and files
 .vscode/*
